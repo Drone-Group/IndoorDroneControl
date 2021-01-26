@@ -1,0 +1,2 @@
+# IndoorDroneControl
+The problem to solve is interfacing with an existing localization solution that uses local nodes, called “anchors”, which have known GPS positions in the facility. Two anchors at two different heights are on the four corners of the flyable space. The goal of this localization system is to translate the (x,y,z) position relative to the anchors into GPS coordinates and then send that to the flight controller on the drone to operate in the context of GPS.
