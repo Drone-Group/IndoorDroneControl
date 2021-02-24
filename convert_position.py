@@ -1,3 +1,4 @@
+import sys
 from pyproj import Transformer
 
 def localize(pointX, pointY, pointZ):
@@ -14,3 +15,5 @@ def localize(pointX, pointY, pointZ):
 
     return geoCoordinate[0], geoCoordinate[1], geoCoordinate[2]
 
+#Output
+print(localize(sys.argv[1], sys.argv[2], sys.argv[3]))
