@@ -4,11 +4,11 @@ from pyproj import Transformer
 def localize(pointX, pointY, pointZ):
 
 #Coordinate Reference System
-    inputEPSG = 3857
+    inputEPSG = 4978
     outputEPSG = 4326
     
 #Create an instance of the Transformer 
-    transformer = Transformer.from_crs(inputEPSG, outputEPSG)
+    transformer = Transformer.from_crs(inputEPSG, outputEPSG, always_xy=True)
 
 #Perform cartographic transformation
     geoCoordinate = transformer.transform(pointX, pointY, pointZ)
