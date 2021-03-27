@@ -1,0 +1,6 @@
+
+#!/bin/bash
+filename="input.txt"
+while read -r line || [ -n "$line" ]; do
+    python3 convert_position.py $line
+done < "$filename"
