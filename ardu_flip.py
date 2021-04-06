@@ -32,6 +32,8 @@ while cs.lat == 0:
 
 print 'GPS is up'
 
+# ------------- This code is ideally meant to run on RG's PC -------------
+
 Script.SendRC(3, 1000, False)
 Script.SendRC(4, 2000, True)
 cs.messages.Clear()
@@ -49,13 +51,12 @@ Script.SendRC(3, 1370, True)    # Throttle
 
 while cs.roll > -45:            # Top half 0 - 180
     Script.Sleep(5)
-
-while cs.roll < -45:            # -180 - -45
+while cs.roll < -45:            # Bottom (-180) - (-45)
     Script.Sleep(5)
 
 Script.SendRC(5, 1500, False)   # Stabilize
-Script.SendRC(1, 1500, True)    # Level roll
-Script.Sleep(2000)              # 2 sec to stabilize
+Script.SendRC(1, 1500, True)    # Level it out
+Script.Sleep(2000)              # Literally giving it time to stabilize
 Script.SendRC(3, 1300, True)    # Throttle back to land
 
 while cs.alt > 0.1:             # Decend but dont fly into the ground
