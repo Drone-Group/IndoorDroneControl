@@ -1,8 +1,7 @@
 # Use this code
 # It is the example code for multicopters posted to the ardupilot_wiki's github
-#
+#   It will be safer to use than my code
 # https://github.com/ArduPilot/ardupilot_wiki/blob/master/planner/source/docs/using-python-scripts-in-mission-planner.rst
-#
 #
 #
 
