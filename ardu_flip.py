@@ -4,6 +4,9 @@
 #
 #   https://ardupilot.org/planner/docs/using-python-scripts-in-mission-planner.html
 #
+
+####### Don't use this one
+
 import sys
 
 sys.path.append(r"c:\Python27\Lib\site-packages")   # Very important that we
